@@ -19,7 +19,7 @@ pipeline {
     stage('Unit Tests') {
       steps{
         script {
-          sh 'sudo npm install'
+          sh '/root/.nvm/versions/node/v14.15.4/bin npm install'
 	  sh 'npm test -- --watchAll=false'
         }
       }
