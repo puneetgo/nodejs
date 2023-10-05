@@ -19,7 +19,7 @@ pipeline {
     stage('Unit Tests') {
       steps{
         script {
-          sh 'npm install'
+          sh 'sudo npm install'
 	  sh 'npm test -- --watchAll=false'
         }
       }
